@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="中山大学新闻传播硕士蔡臻晗的新闻采编、健康传播、项目策划与数据新闻作品集。">
+  <title>蔡臻晗｜个人作品集</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="作品集导航">
+    <button class="identity" data-go="1"><span class="identity-mark">蔡</span><span>蔡臻晗 · 作品集</span></button>
+    <div class="page-nav" id="page-nav"></div>
+    <span class="counter" id="counter">01 / 09</span>
+  </nav>
+  <main class="portfolio" id="portfolio" aria-label="蔡臻晗个人作品集"></main>
+  <footer>CAI ZHENHAN · PROJECT PORTFOLIO · 2026</footer>
+  <script>
+    const links = [
+      [4,'https://www.xinhuanet.com/20260501/80a5de936e584f9fa3d5c37887679830/c.html',[.04,.17,.435,.735],'从“新”出发 万商共赴'],[4,'https://app.xinhuanet.com/news/article.html?articleId=2026043080824e92520d475489574aacdb7bb819',[.585,.23,.825,.485],'透视“心机商标”背后的文字游戏'],[4,'https://www.news.cn/politics/20260320/1c65610b67ed49ed95858be209860388/c.html',[.135,.79,.34,.95],'微纪录片｜英歌无畏'],[4,'https://www.xinhuanet.com/20260605/1c2ab0545ca14c0ca026469b6ac1996e/c.html',[.36,.79,.555,.95],'乡村“领头雁”'],[4,'https://h.xinhuaxmt.com/vh512/share/13214926?docid=13214926&newstype=1001&d=1352776&channel=weixin&time=1785130243232',[.585,.5,.825,.735],'当高尔夫走进城市新空间'],[4,'https://h.xinhuaxmt.com/vh512/share/13142696?docid=13142696&newstype=1001&d=1352701&channel=weixin&time=1781022027136',[.585,.79,.825,.95],'第三届中国认证认可大会'],
+      [5,'https://weixin.qq.com/sph/A99Uieyo2X',[.05,.31,.23,.865],'健康365作品'],[5,'https://weixin.qq.com/sph/A0YViyFRKv',[.21,.39,.395,.915],'健康365作品'],[5,'https://weixin.qq.com/sph/Aj7qnExIjH',[.41,.305,.6,.855],'健康365作品'],[5,'https://weixin.qq.com/sph/AYjAmUHvKH',[.59,.37,.72,.835],'健康365作品'],[5,'https://weixin.qq.com/sph/A81hipZoiV',[.72,.38,.85,.835],'健康365作品'],[5,'https://weixin.qq.com/sph/Ao6e4B0vJh',[.845,.38,.98,.835],'健康365作品'],
+      [6,'https://m.itouchtv.cn/article/4e17764158f1eddaab288c2c9d5823a4',[.338,.385,.44,.83],'触电新闻作品'],[6,'https://m.itouchtv.cn/article/91fa6e973813dd4087459251a1b916f6',[.61,.32,.7,.75],'触电新闻作品'],[6,'https://m.itouchtv.cn/article/56163ee4e40edcf53a738a1b24cb4e83',[.7,.36,.79,.745],'触电新闻作品'],[6,'https://m.itouchtv.cn/video/2cbaf18c1b507f40a1c589401a617054',[.885,.335,.972,.74],'触电新闻视频作品'],[6,'https://weixin.qq.com/sph/AEzAXSIZA3',[.395,.105,.615,.875],'立春“春捂”有讲究'],[6,'https://weixin.qq.com/sph/A6UfuPdLwF',[.79,.34,.885,.74],'老人跌倒急救步骤'],
+      [7,'https://m.itouchtv.cn/article/d765d7f40adc4cc969a2910e8d1214f0',[.035,.245,.21,.505],'触电新闻作品'],[7,'https://m.itouchtv.cn/video/2cbaf18c1b507f40a1c589401a617054',[.035,.535,.21,.765],'触电新闻视频作品'],[7,'https://m.itouchtv.cn/article/56163ee4e40edcf53a738a1b24cb4e83',[.395,.535,.575,.765],'触电新闻作品'],[7,'https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E7%AC%AC%E4%B8%80%E5%8C%BB%E9%99%A2%20%E7%AC%AC268%E6%9C%9F%20%E5%8D%B5%E5%B7%A2%E6%97%A9%E8%A1%B0%E7%9A%843%E4%B8%AA%E4%BF%A1%E5%8F%B7',[.215,.245,.39,.505],'卵巢早衰的3个信号'],[7,'https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E7%AC%AC%E4%B8%80%E5%8C%BB%E9%99%A2%20%E7%AC%AC267%E6%9C%9F%20%E9%A2%84%E9%98%B2%E8%A1%80%E6%A0%93%E7%9A%84%E6%87%92%E4%BA%BA%E5%8A%A8%E4%BD%9C',[.395,.245,.575,.505],'预防血栓的懒人动作'],[7,'https://weixin.qq.com/sph/AkYKRX6rjv',[.58,.19,.97,.76],'胆囊癌健康科普'],[7,'https://weixin.qq.com/sph/A6UfuPdLwF',[.215,.535,.39,.765],'老人跌倒急救步骤'],
+      [8,'https://m.itouchtv.cn/article/b62de23566b25284420980460d51eed0',[.04,.16,.49,.61],'多彩乡村项目'],[8,'https://m.itouchtv.cn/video/1ae62a6e921dd7e4b20aed97beff3a3b',[.73,.155,.965,.405],'平坝文旅项目'],[8,'https://m.itouchtv.cn/article/91fa6e973813dd4087459251a1b916f6',[.04,.7,.23,.94],'乡村文化作品'],[8,'https://m.itouchtv.cn/article/4e17764158f1eddaab288c2c9d5823a4',[.69,.7,.86,.94],'文旅内容作品'],[8,'https://weixin.qq.com/sph/AEzAXSIZA3',[.505,.155,.72,.405],'立春“春捂”有讲究'],[8,'https://weixin.qq.com/sph/AO0WqbcQUW',[.505,.45,.72,.69],'肺功能恢复科普'],[8,'https://mp.weixin.qq.com/s/bF5RxZ1tty6o_e2iTzr-CA',[.73,.45,.965,.69],'乳腺健康科普'],[8,'https://weixin.qq.com/sph/A5tDIStxts',[.38,.7,.57,.94],'乳腺筛查科普'],
+      [9,'https://readymag.website/6037281',[.025,.255,.455,.815],'交互数据新闻'],[9,'https://readymag.website/6037281',[.465,.255,.685,.56],'交互数据新闻'],[9,'https://readymag.website/6037281',[.695,.255,.975,.56],'交互数据新闻'],[9,'https://readymag.website/6037281',[.465,.575,.975,.82],'交互数据新闻']
+    ];
+    const nav=document.querySelector('#page-nav'),root=document.querySelector('#portfolio'),counter=document.querySelector('#counter');
+    for(let page=1;page<=9;page++){
+      const button=document.createElement('button');button.textContent=String(page).padStart(2,'0');button.dataset.go=page;button.ariaLabel=`前往第 ${page} 页`;nav.append(button);
+      const article=document.createElement('article');article.id=`page-${page}`;article.dataset.page=page;article.className='slide';article.ariaLabel=`作品集第 ${page} 页`;article.innerHTML=`<img src="pages/page-${page}.jpg" alt="蔡臻晗个人作品集第 ${page} 页" ${page>2?'loading="lazy"':''}>`;
+      links.filter(x=>x[0]===page).forEach(([,href,[l,t,r,b],label])=>{const a=document.createElement('a');a.className='hotspot';a.href=href;a.target='_blank';a.rel='noreferrer';a.title=label;a.ariaLabel=`${label}（在新窗口打开）`;a.style.cssText=`left:${l*100}%;top:${t*100}%;width:${(r-l)*100}%;height:${(b-t)*100}%`;a.innerHTML='<span>↗</span>';article.append(a)});root.append(article);
+    }
+    document.addEventListener('click',e=>{const n=e.target.closest('[data-go]');if(n)document.querySelector(`#page-${n.dataset.go}`).scrollIntoView({behavior:'smooth',block:'center'})});
+    const buttons=[...nav.children];new IntersectionObserver(entries=>{const hit=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(!hit)return;const page=+hit.target.dataset.page;counter.textContent=`${String(page).padStart(2,'0')} / 09`;buttons.forEach((b,i)=>b.classList.toggle('active',i+1===page))},{threshold:[.25,.55,.8]}).observe(document.querySelector('#page-1'));
+    const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const page=+e.target.dataset.page;counter.textContent=`${String(page).padStart(2,'0')} / 09`;buttons.forEach((b,i)=>b.classList.toggle('active',i+1===page))}})},{threshold:.55});document.querySelectorAll('.slide').forEach(x=>observer.observe(x));buttons[0].classList.add('active');
+  </script>
+</body>
+</html>
